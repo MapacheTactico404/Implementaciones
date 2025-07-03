@@ -1,0 +1,56 @@
+<!--Diseñar un algoritmo que lea y visualice una serie de números distintos de cero. 
+El algoritmo debe terminar con un valor cero que no se debe visualizar. 
+Visualizar el número de valores leídos. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="solucion2.js" defer></script>
+</head>
+<body>
+    <main>
+       <section id="contenedor" class="contenedor">
+        <article class="informacion">
+            <h2 class="titulo-ejercicio">Números diferentes de 0</h2>
+            <p class="subtitulo-intrucciones">Intrucciones</p>
+            <div class="informacion">
+                <p>1. Ingresa 1 numero y da clic en agregar</p>
+                <p>2. Si deseas reiniciar el arreglo puedes dar clic en reset</p>
+                <p>3. Puedes ver el tu arreglo en cualquier momento</p>
+                <p>Notas:<br>
+                -Limite del arreglo: 10 cifras. <br>
+                -Si el primer numero es 0 no puedes iniciar el juego <br>
+                -Si ingresas un 0 el arreglo termina y muestra sus datos <br>
+                </p>
+            </div>
+        </article>
+        <div id="miformulario">
+            <div id="campo-form">
+                <label for="numero">Introduce un número</label>
+                <input type="number" name="numero"  id="numero" autofocus required>
+            </div>
+
+            <div id="contenedor-btn">
+                <button id="reiniciar" class="btn">Reiniciar</button>
+
+                <button id="agregar"  class="btn">Agregar</button>
+                
+                <button id="mostrar" class="btn">Mostrar</button>
+            </div>
+
+            <div id="display">
+                <h2>Resultados</h2>
+                <div id="itemsDisplay">
+
+                </div>
+            </div>
+        
+        </div>
+       </section>
+    </main>
+</body>
+</html>

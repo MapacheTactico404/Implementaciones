@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo de Euclides</title>
+    <link rel="stylesheet" href="euclides.css">
+    <script src="euclides.js"></script>
+</head>
+<body>
+    <main>
+        <div class="contenedor">
+            <section class="contenedor-intrucciones">
+                <h1 class="titulo">Máximo Común Divisor(MCD)</h1>
+                <article class="intrucciones">
+                    <h2>Descripción</h2>
+                    <p>En matemáticas, se denomina máximo común divisor o MCD al mayor número que divide exactamente a dos o más números a la vez. Como hablamos del mayor número solo tendremos en cuenta los divisores positivos.
+                    <p>También podemos decir que el máximo común divisor de dos números «A» y «B», es el número mayor que los divide a los dos, tanto al número A como al número B.
+                    </p>
+                    <p>Por ejemplo diremos que el máximo común divisor de 18 y 24 es 6, porque 6 es el mayor de los divisores comunes de 18 y 24 y lo escribimos MCD (18,24) = 6    </p>
+                    <h2>Instrucciones</h2>
+                        <p>El algoritmo de Euclides es un método para encontrar el máximo común divisor (MCD) de dos números enteros.</p>
+                        <p>Para utilizarlo, ingresa dos números enteros positivos en los campos correspondientes y presiona el botón "Calcular MCD".</p>
+                </article>
+               
+            
+
+            </section>
+            <section id="contenedor-formulario">
+                <nav class="menu">
+                    <a href="#euclides" class="btn">Euclides</a>
+                    <a href="#primos" class="btn">Numeros Primos</a>
+                    <a href="#sucesivos" class="btn">Resta Sucesiva</a>
+                    <a href="#minimo" class="btn">MCM</a>
+                    <a href="#maximo" class="btn">Programados</a>
+                </nav>
+
+                <form id="formulario-calculadora" class="formulario-calculadora">
+                    <div class="titulo-formulario">
+                        <h2>Calculadora</h2>
+                        <p>Introduce dos números a continuación para hallar el máximo común divisor entre ellos. </p>
+                    </div>
+                    <div class="inputs-formulario">
+                        <label for="num1">Valor 1:</label>
+                        <input type="number" id="num1" name="num1" value="8" class="numero" title="Ingrese un número entero positivo" size="10" maxlength="18" required> 
+                        <label for="num2">Valor 2:</label>
+                        <input type="number" id="num2" name="num2" value="4" class="numero" title="Ingrese un número entero positivo" size="10" maxlength="18" required> 
+                    </div>
+                    <div class="botones-formulario">
+                        <button type="button" class="btn-form" onclick="limpiarCampos()">Limpiar</button>
+                        <button type="button" class="btn-form" onclick="calcularMCD()">Calcular</button>
+                    </div>
+                    <div class="resultado">
+                        <label for="">Resultado:</label>
+                        <textarea name="" id="" readonly></textarea>
+                    </div>
+
+                </form>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
+
+

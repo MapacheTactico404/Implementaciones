@@ -1,0 +1,40 @@
+<!--2.5. Diseñar un algoritmo que visualice y sume la serie de
+números 3, 6, 9, 12..., 99.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2-5</title>
+    
+    <link rel="stylesheet" href="estilo.css">
+
+    
+</head>
+<body>
+   <main>
+     <section class="card">
+        <h1 class="tituloCard">Suma de una serie de numeros</h1>
+        <article class="contenedorArticulo">
+            <h2 class="subtituloCard">Intrucciones</h2>
+            <p class="informacion">Este programa genera y suma una serie de números. Tú introduces un número, y el programa creará la secuencia sumando ese mismo número repetidamente (por ejemplo, si pones 4, verás 4, 8, 12...). Al final, te mostrará la suma total de todos esos números.</p>
+            <p class="informacion"><em>Nota:</em></p>
+            <p class="informacion"><em>El limite es el numero 1000</em></p>
+        </article>
+        
+        
+        <input type="number" name="numero" id="numero">
+        <button type="button" id="serie" class="btn generador">Generar</button>
+        <button id="reiniciar" class="btn reinicio">Reiniciar</button>
+        <div id="pantalla" class="contenedorDisplay"></div>
+        <div id="pantalla_total">
+            
+        </div>
+        
+    </section>
+    
+   </main>
+   <script src="serie.js"></script>
+</body>
+
+</html>
