@@ -1,0 +1,52 @@
+<!--
+2.6. Escribir un algoritmo que lea cuatro números y a con-
+tinuación visualice el mayor de los cuatro.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="procesar.js" defer></script>
+</head>
+<body>
+    <section class="card">
+        <h1 class="tituloCard">Número Mayor</h1>
+        <article class="contenedorArticulo">
+            <p>Intrucciones</p>
+            <p>- Ingresa 4 números y visualiza el mayor de ellos</p>
+        </article>
+        <div class="contenedorCamposNum">
+            <div class="campoNum">
+                <label for="num1">A</label>
+                <input type="number" class="entradaNum" id="num1">
+            </div>
+            
+
+            <div class="campoNum">
+                <label for="num2">B</label>
+                <input type="number" class="entradaNum" id="num2">
+            </div>
+
+            <div class="campoNum">
+                <label for="num3">C</label>
+                <input type="number" class="entradaNum" id="num3">
+            </div>
+
+            <div class="campoNum">
+                <label for="num4">D</label>
+                <input type="number" class="entradaNum" id="num4">
+            </div>
+        </div>
+        <div class="contenedorBotones">
+            <button type="button" class="btn" id="btnReiniciar">Reiniciar</button>
+            <button class="btn" id="btnCalcular">Calcular</button>
+        </div>
+        <div id="pantalla">
+            
+        </div>
+    </section>
+</body>
+</html>
